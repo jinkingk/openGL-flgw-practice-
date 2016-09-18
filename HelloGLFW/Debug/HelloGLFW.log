@@ -1,0 +1,6 @@
+﻿  transition.cpp
+c:\users\administrator\documents\visual studio 2015\projects\helloglfw\opengl\include\learnopengl\shader.h(63): warning C4101: “infoLog”: 未引用的局部变量
+c:\users\administrator\documents\visual studio 2015\projects\helloglfw\opengl\include\learnopengl\shader.h(62): warning C4101: “success”: 未引用的局部变量
+c:\users\administrator\documents\visual studio 2015\projects\helloglfw\helloglfw\transition.cpp(216): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\helloglfw\helloglfw\transition.cpp(220): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  HelloGLFW.vcxproj -> C:\Users\Administrator\Documents\Visual Studio 2015\Projects\HelloGLFW\Debug\HelloGLFW.exe
