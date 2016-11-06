@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="源文件\lighting">
+      <UniqueIdentifier>{ea8f9b08-17ea-4a76-b0be-1e0436d7ab37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\lighting\1.colors">
+      <UniqueIdentifier>{bc000990-32b7-4f80-b6f6-87d75fdfa546}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="helloglfw.cpp">
@@ -26,6 +32,9 @@
     </ClCompile>
     <ClCompile Include="transition.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lighting\1.colors\colors_scene.cpp">
+      <Filter>源文件\lighting\1.colors</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

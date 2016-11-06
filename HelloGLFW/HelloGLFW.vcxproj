@@ -154,6 +154,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="helloglfw.cpp" />
+    <ClCompile Include="lighting\1.colors\colors_scene.cpp" />
     <ClCompile Include="shader.cpp" />
     <ClCompile Include="texture.cpp" />
     <ClCompile Include="transition.cpp" />
