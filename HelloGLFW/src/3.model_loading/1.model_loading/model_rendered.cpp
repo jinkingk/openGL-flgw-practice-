@@ -108,6 +108,20 @@ int main()
         model = glm::translate(model, glm::vec3(0.0f, -1.75f, 0.0f)); // Translate it down a bit so it's at the center of the scene
         model = glm::scale(model, glm::vec3(0.2f, 0.2f, 0.2f));	// It's a bit too big for our scene, so scale it down
         glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+
+		//draw light
+		glUniform3f(glGetUniformLocation(shader.Program, "pointLights.position"), 0.7f, 0.2f, 2.0f);
+		glUniform3f(glGetUniformLocation(shader.Program, "pointLights.ambient"), 0.05f, 0.05f, 0.05f);
+		glUniform3f(glGetUniformLocation(shader.Program, "pointLights.diffuse"), 0.8f, 0.8f, 0.8f);
+		glUniform3f(glGetUniformLocation(shader.Program, "pointLights.specular"), 1.0f, 1.0f, 1.0f);
+		glUniform1f(glGetUniformLocation(shader.Program, "pointLights.constant"), 1.0f);
+		glUniform1f(glGetUniformLocation(shader.Program, "pointLights.linear"), 0.09);
+		glUniform1f(glGetUniformLocation(shader.Program, "pointLights.quadratic"), 0.032);
+
+		GLint viewPosLoc = glGetUniformLocation(shader.Program, "viewPos");
+		//		glUniform3f(viewPosLoc, camera.Position.x, camera.Position.y, camera.Position.z);
+
+
         ourModel.Draw(shader);       
 
         // Swap the buffers
