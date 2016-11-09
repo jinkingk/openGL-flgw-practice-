@@ -76,8 +76,8 @@ int main()
     glStencilOp(GL_KEEP, GL_KEEP, GL_REPLACE);
 
     // Setup and compile our shaders
-    Shader shader("stencil_testing.vs", "stencil_testing.frag");
-    Shader shaderSingleColor("stencil_testing.vs", "stencil_single_color.frag");
+    Shader shader("src/4.advanced_opengl/2.stencil_testing/stencil_testing.vs", "src/4.advanced_opengl/2.stencil_testing/stencil_testing.frag");
+    Shader shaderSingleColor("src/4.advanced_opengl/2.stencil_testing/stencil_testing.vs", "src/4.advanced_opengl/2.stencil_testing/stencil_single_color.frag");
 
     #pragma region "object_initialization"
     // Set the object data (buffers, vertex attributes)

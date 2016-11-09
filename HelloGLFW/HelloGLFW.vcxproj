@@ -156,6 +156,7 @@
     <ClCompile Include="helloglfw.cpp" />
     <ClCompile Include="lighting\1.colors\colors_scene.cpp" />
     <ClCompile Include="shader.cpp" />
+    <ClCompile Include="src\4.advanced_opengl\2.stencil_testing\stencil_testing.cpp" />
     <ClCompile Include="texture.cpp" />
     <ClCompile Include="transition.cpp" />
   </ItemGroup>

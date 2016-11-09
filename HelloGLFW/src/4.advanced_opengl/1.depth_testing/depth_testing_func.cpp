@@ -70,10 +70,10 @@ int main()
 
     // Setup some OpenGL options
     glEnable(GL_DEPTH_TEST);
-    // glDepthFunc(GL_ALWAYS); // Set to always pass the depth test (same effect as glDisable(GL_DEPTH_TEST))
+    glDepthFunc(GL_LESS); // Set to always pass the depth test (same effect as glDisable(GL_DEPTH_TEST))
 
     // Setup and compile our shaders
-    Shader shader("depth_testing.vs", "depth_testing.frag");
+    Shader shader("src/4.advanced_opengl/1.depth_testing/depth_testing.vs", "src/4.advanced_opengl/1.depth_testing/depth_testing.frag");
 
     #pragma region "object_initialization"
     // Set the object data (buffers, vertex attributes)
@@ -157,8 +157,8 @@ int main()
     glBindVertexArray(0);
 
     // Load textures
-    GLuint cubeTexture = loadTexture(FileSystem::getPath("resources/textures/marble.jpg").c_str());
-    GLuint floorTexture = loadTexture(FileSystem::getPath("resources/textures/metal.png").c_str());
+    GLuint cubeTexture = loadTexture("resources/textures/marble.jpg");
+    GLuint floorTexture = loadTexture("resources/textures/metal.png");
     #pragma endregion
 
     // Game loop

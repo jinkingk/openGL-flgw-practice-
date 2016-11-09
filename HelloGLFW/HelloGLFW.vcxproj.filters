@@ -19,6 +19,9 @@
     <Filter Include="源文件\lighting\1.colors">
       <UniqueIdentifier>{bc000990-32b7-4f80-b6f6-87d75fdfa546}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\src">
+      <UniqueIdentifier>{e30d7d0f-c1b6-44c8-8892-69a49360a907}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="helloglfw.cpp">
@@ -35,6 +38,9 @@
     </ClCompile>
     <ClCompile Include="lighting\1.colors\colors_scene.cpp">
       <Filter>源文件\lighting\1.colors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\4.advanced_opengl\2.stencil_testing\stencil_testing.cpp">
+      <Filter>源文件\src</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
