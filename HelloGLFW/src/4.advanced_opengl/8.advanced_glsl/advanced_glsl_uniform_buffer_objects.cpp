@@ -65,10 +65,10 @@ int main()
     glEnable(GL_DEPTH_TEST);
 
     // Setup and compile our shaders
-    Shader shaderRed("uniform_buffers.vs", "red.frag");
-    Shader shaderGreen("uniform_buffers.vs", "green.frag");
-    Shader shaderBlue("uniform_buffers.vs", "blue.frag");
-    Shader shaderYellow("uniform_buffers.vs", "yellow.frag");
+    Shader shaderRed("src/4.advanced_opengl/8.advanced_glsl/uniform_buffers.vs", "src/4.advanced_opengl/8.advanced_glsl/red.frag");
+    Shader shaderGreen("src/4.advanced_opengl/8.advanced_glsl/uniform_buffers.vs", "src/4.advanced_opengl/8.advanced_glsl/green.frag");
+    Shader shaderBlue("src/4.advanced_opengl/8.advanced_glsl/uniform_buffers.vs", "src/4.advanced_opengl/8.advanced_glsl/blue.frag");
+    Shader shaderYellow("src/4.advanced_opengl/8.advanced_glsl/uniform_buffers.vs", "src/4.advanced_opengl/8.advanced_glsl/yellow.frag");
 
     #pragma region "object_initialization"
 
