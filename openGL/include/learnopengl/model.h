@@ -37,7 +37,6 @@ public:
 			this->meshes[i].Draw(shader);
 	}
 
-private:
 	/*  Model Data  */
 	vector<Mesh> meshes;
 	string directory;
@@ -45,6 +44,10 @@ private:
 
 										/*  Functions   */
 										// Loads a model with supported ASSIMP extensions from file and stores the resulting meshes in the meshes vector.
+
+private:
+	
+
 	void loadModel(string path)
 	{
 		// Read file via ASSIMP

@@ -65,12 +65,13 @@ int main()
     glEnable(GL_DEPTH_TEST);
 
     // Setup and compile our shaders
-    Shader planetShader("planet.vs", "planet.frag");
-    Shader instanceShader("instanced_asteroids.vs", "instanced_asteroids.frag");
+	const char* sPath = "src/4.advanced_opengl/10.instancing/";
+    Shader planetShader("src/4.advanced_opengl/10.instancing/planet.vs", "src/4.advanced_opengl/10.instancing/planet.frag");
+    Shader instanceShader("src/4.advanced_opengl/10.instancing/instanced_asteroids.vs", "src/4.advanced_opengl/10.instancing/instanced_asteroids.frag");
 
     // Load models
-    Model rock(FileSystem::getPath("resources/objects/rock/rock.obj").c_str());
-    Model planet(FileSystem::getPath("resources/objects/planet/planet.obj").c_str());
+    Model rock("resources/objects/rock/rock.obj");
+    Model planet("resources/objects/planet/planet.obj");
 
     // Set projection matrix
     glm::mat4 projection = glm::perspective(45.0f, (GLfloat)screenWidth/(GLfloat)screenHeight, 1.0f, 10000.0f);

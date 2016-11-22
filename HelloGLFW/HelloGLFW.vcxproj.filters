@@ -39,7 +39,7 @@
     <ClCompile Include="lighting\1.colors\colors_scene.cpp">
       <Filter>源文件\lighting\1.colors</Filter>
     </ClCompile>
-    <ClCompile Include="src\4.advanced_opengl\8.advanced_glsl\advanced_glsl_uniform_buffer_objects.cpp">
+    <ClCompile Include="src\6.in_practice\1.debugging\debugging.cpp">
       <Filter>源文件\src</Filter>
     </ClCompile>
   </ItemGroup>

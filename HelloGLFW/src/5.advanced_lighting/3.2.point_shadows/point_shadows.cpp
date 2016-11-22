@@ -78,8 +78,8 @@ int main()
     glEnable(GL_CULL_FACE);
 
     // Setup and compile our shaders
-    Shader shader("point_shadows.vs", "point_shadows.frag");
-    Shader simpleDepthShader("point_shadows_depth.vs", "point_shadows_depth.frag", "point_shadows_depth.gs");
+    Shader shader("src/5.advanced_lighting/3.2.point_shadows/point_shadows.vs", "src/5.advanced_lighting/3.2.point_shadows/point_shadows.frag");
+    Shader simpleDepthShader("src/5.advanced_lighting/3.2.point_shadows/point_shadows_depth.vs", "src/5.advanced_lighting/3.2.point_shadows/point_shadows_depth.frag", "src/5.advanced_lighting/3.2.point_shadows/point_shadows_depth.gs");
 
     // Set texture samples
     shader.Use();
@@ -90,7 +90,7 @@ int main()
     glm::vec3 lightPos(0.0f, 0.0f, 0.0f);
 
     // Load textures
-    woodTexture = loadTexture(FileSystem::getPath("resources/textures/wood.png").c_str());
+    woodTexture = loadTexture("resources/textures/wood.png");
 
     // Configure depth map FBO
     const GLuint SHADOW_WIDTH = 1024, SHADOW_HEIGHT = 1024;

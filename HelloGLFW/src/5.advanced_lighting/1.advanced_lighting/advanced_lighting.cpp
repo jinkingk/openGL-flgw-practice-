@@ -70,7 +70,7 @@ int main()
     glEnable(GL_DEPTH_TEST);
 
     // Setup and compile our shaders
-    Shader shader("advanced_lighting.vs", "advanced_lighting.frag");
+    Shader shader("src/5.advanced_lighting/1.advanced_lighting/advanced_lighting.vs", "src/5.advanced_lighting/1.advanced_lighting/advanced_lighting.frag");
 
     GLfloat planeVertices[] = {
         // Positions          // Normals         // Texture Coords
@@ -101,7 +101,7 @@ int main()
     glm::vec3 lightPos(0.0f, 0.0f, 0.0f);
 
     // Load textures
-    GLuint floorTexture = loadTexture(FileSystem::getPath("resources/textures/wood.png").c_str());
+    GLuint floorTexture = loadTexture("resources/textures/wood.png");
 
     // Game loop
     while(!glfwWindowShouldClose(window))

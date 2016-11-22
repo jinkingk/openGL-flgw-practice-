@@ -77,8 +77,8 @@ int main()
     glEnable(GL_DEPTH_TEST);
 
     // Setup and compile our shaders
-    Shader shader("lighting.vs", "lighting.frag");
-    Shader hdrShader("hdr.vs", "hdr.frag");
+    Shader shader("src/5.advanced_lighting/6.hdr/lighting.vs", "src/5.advanced_lighting/6.hdr/lighting.frag");
+    Shader hdrShader("src/5.advanced_lighting/6.hdr/hdr.vs", "src/5.advanced_lighting/6.hdr/hdr.frag");
 
     // Light sources
     // - Positions
@@ -95,7 +95,7 @@ int main()
     lightColors.push_back(glm::vec3(0.0f, 0.1f, 0.0f));
 
     // Load textures
-    woodTexture = loadTexture(FileSystem::getPath("resources/textures/wood.png").c_str());
+    woodTexture = loadTexture("resources/textures/wood.png");
 
     // Set up floating point framebuffer to render scene to
     GLuint hdrFBO;

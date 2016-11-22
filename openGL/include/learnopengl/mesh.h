@@ -85,7 +85,7 @@ public:
         glBindVertexArray(0);
     }
 
-private:
+public:
     /*  Render data  */
     GLuint VAO, VBO, EBO;
 

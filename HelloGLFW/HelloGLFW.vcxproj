@@ -156,7 +156,7 @@
     <ClCompile Include="helloglfw.cpp" />
     <ClCompile Include="lighting\1.colors\colors_scene.cpp" />
     <ClCompile Include="shader.cpp" />
-    <ClCompile Include="src\4.advanced_opengl\8.advanced_glsl\advanced_glsl_uniform_buffer_objects.cpp" />
+    <ClCompile Include="src\6.in_practice\1.debugging\debugging.cpp" />
     <ClCompile Include="texture.cpp" />
     <ClCompile Include="transition.cpp" />
   </ItemGroup>
