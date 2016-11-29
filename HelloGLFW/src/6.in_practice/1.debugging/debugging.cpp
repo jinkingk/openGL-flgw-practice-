@@ -124,7 +124,7 @@ int main()
 
  
     // OpenGL initial state
-    Shader shader("debugging.vs", "debugging.frag");
+    Shader shader("src/6.in_practice/1.debugging/debugging.vs", "src/6.in_practice/1.debugging/debugging.frag");
 
     // configure 3D cube
     GLuint cubeVAO, cubeVBO;
@@ -193,7 +193,7 @@ int main()
     unsigned char *image = SOIL_load_image(FileSystem::getPath("resources/textures/wood.png").c_str(), &texWidth, &texHeight, 0, SOIL_LOAD_RGB);
 
     glBindTexture(GL_TEXTURE_2D, textureID);
-    glTexImage2D(GL_FRAMEBUFFER, 0, GL_RGB, texWidth, texHeight, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, texWidth, texHeight, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
     glGenerateMipmap(GL_TEXTURE_2D);
 
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
@@ -204,6 +204,7 @@ int main()
     SOIL_free_image_data(image);
 
     // set up projection matrix
+	shader.Use();
     glm::mat4 projection = glm::perspective(glm::radians(45.0f), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 10.0f);
     glUniformMatrix4fv(glGetUniformLocation(shader.Program, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
     glUniform1i(glGetUniformLocation(shader.Program, "tex"), 0);

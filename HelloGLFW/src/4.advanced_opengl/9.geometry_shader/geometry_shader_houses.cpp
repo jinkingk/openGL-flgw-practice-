@@ -41,7 +41,7 @@ int main()
     glViewport(0, 0, screenWidth, screenHeight);
 
     // Setup and compile our shaders
-    Shader shader("geometry_shader.vs", "geometry_shader.frag", "geometry_shader.gs");
+    Shader shader("src/4.advanced_opengl/9.geometry_shader/geometry_shader.vs", "src/4.advanced_opengl/9.geometry_shader/geometry_shader.frag", "src/4.advanced_opengl/9.geometry_shader/geometry_shader.gs");
 
     // Vertex data
     GLfloat points[] = {
